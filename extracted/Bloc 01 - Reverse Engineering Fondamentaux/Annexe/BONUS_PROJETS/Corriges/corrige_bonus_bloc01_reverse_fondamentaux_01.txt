@@ -1,0 +1,17 @@
+CORRIGÉ BONUS 1 - M2 BLOC 01 - REVERSE CRACKMES
+
+PHASES
+1. Setup : Ghidra + x64dbg + Ubuntu 22.04
+2. Méthodologie :
+   - strings analysis
+   - imports analysis
+   - main/entry function
+   - control flow
+   - identify check logic
+3. Patching : NOP jz/jnz or reverse condition
+4. Keygen : reverse transformation function
+5. 10 crackmes progressifs, chaque avec writeup
+6. Ghidra scripts utils :
+   - Auto-rename based on API calls
+   - String decryption automatic
+BARÈME 20 : Veille 3, Résolution 8, Methodology 4, Ghidra 3, Writeups 2

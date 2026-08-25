@@ -1,0 +1,13 @@
+CORRIGÉ BONUS 2 - M2 BLOC 01 - MALWARE TRIAGE
+
+PHASES
+1. Lab Remnux isolé (VM + no-network)
+2. Par sample :
+   - PeStudio : imports, sections, strings
+   - CFF Explorer : PE headers détaillés
+   - Strings : keep suspicious (URLs, keys, paths)
+   - Detect it Easy : packer identification
+   - YARA write rule (exp: strings + imphash)
+3. Dynamic : limited (short run in isolated VM with API monitor)
+4. Triage report template 2 pages
+BARÈME 20 : Veille 3, Triage 6, YARA 5, Reports 3, Article 3

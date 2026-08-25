@@ -1,0 +1,2 @@
+strings crackme02_xor | grep Flag
+[+] Flag: CYBERSUP{x0r_1s_w34k_g0t_1t}

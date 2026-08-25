@@ -1,0 +1,2 @@
+strings crackme03_antidebug | grep Flag
+[+] Flag: CYBERSUP{ptr4c3_byp4ss3d_w1th_lr_pr3l0ad}

@@ -1,0 +1,45 @@
+FROM ubuntu:24.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y \
+    build-essential gcc-multilib g++-multilib \
+    gdb gdb-multiarch \
+    radare2 \
+    python3 python3-pip python3-venv \
+    git curl wget \
+    file strace ltrace ltrace-common \
+    binutils binutils-multiarch \
+    elfutils \
+    libc6-i386 libc6-dbg libc6-dbg:i386 \
+    yara \
+    vim nano tmux \
+    && rm -rf /var/lib/apt/lists/*
+
+# pwndbg
+RUN git clone --depth 1 https://github.com/pwndbg/pwndbg /opt/pwndbg \
+    && cd /opt/pwndbg && ./setup.sh
+
+# pwntools, LIEF, capstone, unicorn
+RUN pip3 install --break-system-packages \
+    pwntools \
+    lief \
+    capstone \
+    unicorn \
+    keystone-engine \
+    ropper \
+    r2pipe
+
+# checksec.sh
+RUN wget -qO /usr/local/bin/checksec https://raw.githubusercontent.com/slimm609/checksec.sh/master/checksec \
+    && chmod +x /usr/local/bin/checksec
+
+# user non-root
+RUN useradd -m -s /bin/bash student
+USER student
+WORKDIR /home/student
+
+RUN echo 'source /opt/pwndbg/gdbinit.py' > ~/.gdbinit \
+    && echo 'set disassembly-flavor intel' >> ~/.gdbinit
+
+CMD ["/bin/bash"]

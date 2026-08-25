@@ -1,0 +1,2 @@
+strings crackme05_crypto | grep Flag
+[+] Flag: CYBERSUP{z3_solv3d_th3_h4sh_%08x}

@@ -1,0 +1,20 @@
+CORRIGÉ BONUS 3 - M2 BLOC 01 - ANDROID REVERSE
+
+PHASES
+1. APK Download (APKMirror, AppStore)
+2. Static :
+   MobSF scan complete
+   Jadx decompile to Java
+3. Dynamic :
+   Emulator (Genymotion, rooted)
+   Frida Server
+   SSL Unpinning script
+   Hook crypto functions
+4. Findings common :
+   Hardcoded keys in res/strings.xml
+   Unprotected WebView
+   Weak crypto (DES)
+   Exported activities
+5. MASVS checklist (50+ controls)
+6. Report + disclosure if critical
+BARÈME 20 : Veille 3, Static 4, Dynamic 5, Findings 5, Reports 3

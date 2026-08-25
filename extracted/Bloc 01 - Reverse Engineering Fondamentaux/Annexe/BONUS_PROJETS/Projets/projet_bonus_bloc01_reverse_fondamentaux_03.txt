@@ -1,0 +1,34 @@
+PROJET BONUS 3 - M2 BLOC 01 - REVERSE FONDAMENTAUX
+"ANDROID APK REVERSE + SECURITY AUDIT - APPS BANCAIRES"
+
+CONTEXTE RECHERCHE
+Research cybersec. Auditer sécurité 3 apps Android (banque, santé, etc. - publiques).
+
+VEILLE
+- APK structure (dex, lib, resources)
+- Jadx, APKTool, MobSF
+- Frida instrumentation
+- Root detection / certificate pinning
+- OWASP MASVS
+
+CHALLENGE
+- 3 APK (publiques, banques par exemple)
+- Static analysis MobSF
+- Dynamic with Frida (hook functions, SSL unpinning)
+- Findings :
+  - Hardcoded secrets (API keys)
+  - Insecure storage
+  - Weak crypto
+  - Debugger detection bypass
+  - WebView issues
+- Responsible disclosure si critical
+
+LIVRABLES
+- 3 audit reports
+- Frida scripts réutilisables
+- MASVS checklist
+- Roadmap personnelle
+
+BARÈME (20)
+Veille : 3, Static : 4, Dynamic : 5, Findings : 5, Reports : 3
+ÉTHIQUE : no exploitation prod, responsible disclosure

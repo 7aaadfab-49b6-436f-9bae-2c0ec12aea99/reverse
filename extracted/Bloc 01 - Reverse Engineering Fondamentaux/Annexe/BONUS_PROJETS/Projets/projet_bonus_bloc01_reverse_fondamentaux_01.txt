@@ -1,0 +1,33 @@
+PROJET BONUS 1 - M2 BLOC 01 - REVERSE FONDAMENTAUX
+"REVERSE CRACKME CHALLENGE SERIES - 10 NIVEAUX PROGRESSIFS"
+
+CONTEXTE RECHERCHE
+Objectif pro : décrocher certification CREA (Certified Reverse Engineer Analyst) ou GREM.
+
+VEILLE
+- x86/x86_64 assembly
+- Calling conventions, stack frames
+- Control flow patterns
+- Anti-debugging basics
+- Ghidra docs officielles
+- Radare2 tutorials
+
+CHALLENGE
+- 10 crackmes crossplatform :
+  - 3 basic serial check (strcmp)
+  - 3 avec transformations simples (XOR, addition)
+  - 2 avec crypto faible (custom)
+  - 1 anti-debug (IsDebuggerPresent, timing)
+  - 1 VM-based (bytecode interprété)
+- Pour chaque : patch OU keygen
+- Script Python/Ghidra pour automation
+- Writeup détaillé
+
+LIVRABLES
+- 10 crackmes résolus + patches/keygens
+- Writeups detailed
+- Ghidra scripts utiles
+- Methodology document
+
+BARÈME (20)
+Veille : 3, Résolution : 8, Methodology : 4, Ghidra scripts : 3, Writeups : 2

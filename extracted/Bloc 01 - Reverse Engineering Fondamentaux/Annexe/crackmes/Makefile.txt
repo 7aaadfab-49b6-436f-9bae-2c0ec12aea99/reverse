@@ -1,0 +1,24 @@
+CC = gcc
+CFLAGS = -no-pie -fno-stack-protector
+TARGETS = crackme01_strings crackme02_xor crackme03_antidebug crackme04_packed crackme05_crypto
+
+all: $(TARGETS)
+
+crackme01_strings: crackme01_strings.c
+	$(CC) $(CFLAGS) -O0 -o $@ $<
+
+crackme02_xor: crackme02_xor.c
+	$(CC) $(CFLAGS) -O0 -o $@ $<
+
+crackme03_antidebug: crackme03_antidebug.c
+	$(CC) $(CFLAGS) -O0 -o $@ $<
+
+crackme04_packed: crackme04_packed.c
+	$(CC) $(CFLAGS) -O0 -o $@ $<
+
+crackme05_crypto: crackme05_crypto.c
+	$(CC) $(CFLAGS) -O2 -o $@ $<
+	strip $@
+
+clean:
+	rm -f $(TARGETS)

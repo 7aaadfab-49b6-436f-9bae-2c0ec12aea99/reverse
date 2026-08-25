@@ -1,0 +1,34 @@
+PROJET BONUS 2 - M2 BLOC 01 - REVERSE FONDAMENTAUX
+"MALWARE TRIAGE LAB - SAMPLES RÉCENTS PUBLICS"
+
+CONTEXTE RECHERCHE
+CERT interne. Analyser 5 samples malware publics (MalwareBazaar) pour triage rapide.
+
+VEILLE
+- MalwareBazaar, VirusBay, bazaar.abuse.ch
+- Malware types : loader, infostealer, RAT
+- PMA (Practical Malware Analysis book)
+- YARA rule writing
+- Triage tools : PeStudio, CFF Explorer
+
+CHALLENGE
+- 5 samples publics famille différentes (Emotet-like, AgentTesla, etc.)
+- Triage rapide chaque (< 2h)
+  - Hash, type, strings clés
+  - Imports, sections anormales
+  - Packing détection
+  - YARA rule custom
+  - IoCs extraction
+- YARA rules qualitatifs
+- Report triage court (2 pages) par sample
+
+LIVRABLES
+- 5 YARA rules
+- 5 triage reports
+- Scripts automation
+- Article technique méthodologie
+
+ÉTHIQUE : lab isolé Remnux/Flare
+
+BARÈME (20)
+Veille : 3, Triage : 6, YARA : 5, Reports : 3, Article : 3

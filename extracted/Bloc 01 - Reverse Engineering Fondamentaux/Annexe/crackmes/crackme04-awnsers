@@ -1,0 +1,2 @@
+strings crackme04_packed | grep Flag
+[+] Flag: CYBERSUP{unp4ck3d_th3_s3cr3t}
