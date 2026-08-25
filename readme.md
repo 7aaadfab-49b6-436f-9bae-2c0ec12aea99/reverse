@@ -2,8 +2,6 @@
 
 **Module :** Bloc 01 – Reverse Engineering Fondamentaux
 **Livrable :** flags des crackmes 01 à 05 + méthodologie
-**Auteur :** *étudiant*
-**Destinataire :** *formateur*
 
 ---
 
